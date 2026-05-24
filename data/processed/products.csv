@@ -1,0 +1,31 @@
+product_id,title,category,brand,stock,dimensions_width,dimensions_height,dimensions_depth
+1,Essence Mascara Lash Princess,beauty,Essence,99,15.14,13.08,22.99
+2,Eyeshadow Palette with Mirror,beauty,Glamour Beauty,34,9.26,22.47,27.67
+3,Powder Canister,beauty,Velvet Touch,89,29.27,27.93,20.59
+4,Red Lipstick,beauty,Chic Cosmetics,91,18.11,28.38,22.17
+5,Red Nail Polish,beauty,Nail Couture,79,21.63,16.48,29.84
+6,Calvin Klein CK One,fragrances,Calvin Klein,29,29.36,27.76,20.72
+7,Chanel Coco Noir Eau De,fragrances,Chanel,58,24.5,25.7,25.98
+8,Dior J'adore,fragrances,Dior,98,27.67,28.28,11.83
+9,Dolce Shine Eau de,fragrances,Dolce & Gabbana,4,27.28,29.88,18.3
+10,Gucci Bloom Eau de,fragrances,Gucci,91,20.92,21.68,11.2
+11,Annibale Colombo Bed,furniture,Annibale Colombo,88,28.16,25.36,17.28
+12,Annibale Colombo Sofa,furniture,Annibale Colombo,60,12.75,20.55,19.06
+13,Bedside Table African Cherry,furniture,Furniture Co.,64,13.47,24.99,27.35
+14,Knoll Saarinen Executive Conference Chair,furniture,Knoll,26,13.81,7.5,5.62
+15,Wooden Bathroom Sink With Mirror,furniture,Bath Trends,7,7.98,8.88,28.46
+16,Apple,groceries,,8,13.66,11.01,9.73
+17,Beef Steak,groceries,,86,18.9,5.77,18.57
+18,Cat Food,groceries,,46,18.08,9.26,21.86
+19,Chicken Meat,groceries,,97,11.03,22.11,16.01
+20,Cooking Oil,groceries,,10,19.95,27.54,24.86
+21,Cucumber,groceries,,84,12.8,28.38,21.34
+22,Dog Food,groceries,,71,16.93,27.15,9.29
+23,Eggs,groceries,,9,11.42,7.44,16.95
+24,Fish Steak,groceries,,74,14.95,26.31,11.27
+25,Green Bell Pepper,groceries,,33,15.33,26.65,14.44
+26,Green Chili Pepper,groceries,,3,15.38,18.12,19.92
+27,Honey Jar,groceries,,34,9.28,21.72,17.74
+28,Ice Cream,groceries,,27,14.83,15.07,24.2
+29,Juice,groceries,,50,18.56,21.46,28.02
+30,Kiwi,groceries,,99,19.4,18.67,17.13
