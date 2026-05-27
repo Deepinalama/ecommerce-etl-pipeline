@@ -5,7 +5,7 @@ from urllib.parse import quote_plus
 
 
 
-password = quote_plus("Ichig0kur0s@ki")
+password = quote_plus("DB_password")
 
 engine = create_engine(
     f"postgresql+psycopg2://postgres:{password}@localhost:5432/ecommerce"

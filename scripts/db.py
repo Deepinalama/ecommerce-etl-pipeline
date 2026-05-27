@@ -3,7 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 from urllib.parse import quote_plus
 
-password='Ichig0kur0s@ki'
+password='DB_password'
 encoded_password=quote_plus(password)
 
 
