@@ -16,6 +16,27 @@ An end-to-end **ETL (Extract, Transform, Load)** pipeline that extracts nested e
 
 ---
 
+## Data Warehouse Layer
+
+Building on the existing ETL pipeline, this project also includes a **Kimball-style star schema** layered on top of the OLTP order data — turning raw transactional tables into a model built for analytics.
+
+![Star Schema ERD](docs/star_schema_erd.png)
+
+**What's in it:**
+- `dim_date` — calendar dimension (order dates simulated where the source lacked timestamps; see design notes)
+- `dim_product` — Type 1 SCD (catalog attributes, overwritten on change)
+- `dim_customer` — hybrid SCD: Type 2 on location (address/city/state/country), Type 1 on everything else — tracks *where a customer was* at the time of each historical order, not just where they are now
+- `fact_order_items` — transaction fact table, grain of one row per product per order, validated to reconcile exactly against source data
+
+**Why this matters:** the raw OLTP schema is optimized for transactions, not analysis. This layer makes questions like *"revenue by state, using the customer's location at the time of the order"* — not their current location — actually answerable, correctly, even after a customer moves.
+
+Full design reasoning, including two real data-integrity bugs found and fixed during validation (an SCD2 effective-date bug and an incomplete source catalog handled via Kimball's unknown-member pattern), is documented in [`warehouse/DESIGN_NOTES.md`](warehouse/DESIGN_NOTES.md).
+
+**Example output:**
+
+![Revenue by state demo](docs/revenue_by_state_demo.png)
+
+**To run it**, execute the SQL files in `warehouse/` in numbered order (`01` through `05`) against the Postgres database populated by the existing ETL pipeline.
  Tech Stack
 
 | Layer | Technology |
