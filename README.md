@@ -97,7 +97,7 @@ Kimball Star Schema (warehouse/) for historically-accurate analytics
 
 Building on the OLTP schema above, this project also includes a **Kimball-style star schema** — turning the raw transactional tables into a model built for analytics.
 
-![Star Schema ERD](docs/star_schema_erd.png)
+![Star Schema ERD]
 
 **What's in it:**
 - `dim_date` — calendar dimension (order dates simulated where the source lacked timestamps; see design notes)
@@ -111,7 +111,7 @@ Full design reasoning, including two real data-integrity bugs found and fixed du
 
 **Example output:**
 
-![Revenue by state demo](docs/revenue_by_state_demo.png)
+![Revenue by state demo]
 
 **To run it**, execute the SQL files in `warehouse/` in numbered order (`01` through `05`) against the Postgres database populated by the existing ETL pipeline.
 
